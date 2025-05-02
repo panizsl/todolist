@@ -18,11 +18,9 @@ import {
   Typography,
 } from "@mui/material";
 
-// 👇 اینا رو اضافه کن:
 import CheckIcon from "@mui/icons-material/Check";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-// تعریف تابع initializer دقیقاً بالای کامپوننت
 const init = () => {
   const saved = localStorage.getItem("todos");
   return saved ? JSON.parse(saved) : initialState;
@@ -67,11 +65,16 @@ const TodoApp = () => {
         style={{
           padding: "30px",
           borderRadius: "16px",
-          backgroundColor: "#ffffffcc", // یه سفید با کمی شفافیت
+          backgroundColor: "#ffffffcc",
           boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          fontStyle={"italic"}
+        >
           Todo List{" "}
           <img
             src="/icons/completed-task.png"
@@ -84,6 +87,7 @@ const TodoApp = () => {
           align="center"
           style={{ fontFamily: "serif" }}
           gutterBottom
+          fontStyle={"italic"}
         >
           Tasks left: {remainingCount}
         </Typography>
@@ -101,6 +105,7 @@ const TodoApp = () => {
           color="secondary"
           fullWidth
           style={{ marginTop: "10px" }}
+          fontStyle={"italic"}
         >
           Add todo
         </Button>
