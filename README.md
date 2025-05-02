@@ -1,12 +1,42 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Todo List App 📝
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple yet powerful Todo List application built with **React**, **Material UI**, and **React Hooks** including `useReducer`, `useCallback`, and `useMemo`.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add new todos
+- Mark todos as completed
+- Delete todos
+- LocalStorage persistence (data remains after refresh)
+- Highlight remaining tasks count
+- Optimized with `useCallback` and `useMemo`
+- Styled with Material UI and custom background
+- Responsive and modern UI
+
+## 🧠 Technologies Used
+
+- **React**
+- **Material UI**
+- **useReducer** for state management
+- **useEffect** for syncing with localStorage
+- **useMemo** for calculating remaining tasks efficiently
+- **useCallback** to avoid unnecessary re-renders
+- **Vite** as the build tool
+
+## 📦 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
