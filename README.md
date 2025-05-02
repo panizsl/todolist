@@ -37,6 +37,8 @@ Install dependencies:
 
 npm install
 
-Start the development server:
-
 npm run dev
+
+Start the development server:
+![2025-05-02 (2)](https://github.com/user-attachments/assets/a4bf72df-96eb-4b89-9ee9-44aac070a98c)
+
